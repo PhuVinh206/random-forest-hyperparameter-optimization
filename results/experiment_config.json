@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "n_trials": 30,
+  "cv_folds": 5,
+  "holdout_test_fraction": 0.2,
+  "scoring": "f1_macro",
+  "dataset": "sklearn.datasets.load_breast_cancer",
+  "python": "3.13.16",
+  "scikit_learn": "1.6.1",
+  "search_space": {
+    "n_estimators": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "max_depth": [
+      null,
+      3,
+      5,
+      10,
+      15,
+      20,
+      30
+    ],
+    "min_samples_split": [
+      2,
+      4,
+      6,
+      10,
+      15,
+      20
+    ],
+    "min_samples_leaf": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      10
+    ]
+  }
+}

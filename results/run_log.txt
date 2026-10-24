@@ -1,0 +1,36 @@
+01/30 CV macro-F1 0.9532; best 0.9532
+02/30 CV macro-F1 0.9484; best 0.9532
+03/30 CV macro-F1 0.9553; best 0.9553
+04/30 CV macro-F1 0.9484; best 0.9553
+05/30 CV macro-F1 0.9482; best 0.9553
+06/30 CV macro-F1 0.9484; best 0.9553
+07/30 CV macro-F1 0.9532; best 0.9553
+08/30 CV macro-F1 0.9343; best 0.9553
+09/30 CV macro-F1 0.9482; best 0.9553
+10/30 CV macro-F1 0.9531; best 0.9553
+11/30 CV macro-F1 0.9555; best 0.9555
+12/30 CV macro-F1 0.9461; best 0.9555
+13/30 CV macro-F1 0.9317; best 0.9555
+14/30 CV macro-F1 0.9459; best 0.9555
+15/30 CV macro-F1 0.9507; best 0.9555
+16/30 CV macro-F1 0.9460; best 0.9555
+17/30 CV macro-F1 0.9576; best 0.9576
+18/30 CV macro-F1 0.9391; best 0.9576
+19/30 CV macro-F1 0.9555; best 0.9576
+20/30 CV macro-F1 0.9555; best 0.9576
+21/30 CV macro-F1 0.9555; best 0.9576
+22/30 CV macro-F1 0.9482; best 0.9576
+23/30 CV macro-F1 0.9484; best 0.9576
+24/30 CV macro-F1 0.9434; best 0.9576
+25/30 CV macro-F1 0.9437; best 0.9576
+26/30 CV macro-F1 0.9459; best 0.9576
+27/30 CV macro-F1 0.9529; best 0.9576
+28/30 CV macro-F1 0.9415; best 0.9576
+29/30 CV macro-F1 0.9414; best 0.9576
+30/30 CV macro-F1 0.9458; best 0.9576
+
+RESULTS
+                method  cv_macro_f1   cv_std  cv_time_seconds  test_macro_f1  test_accuracy  fit_seconds  predict_seconds
+Default Random Forest     0.960269 0.018782         1.264670       0.952638        0.95614     0.165654         0.008046
+Random Search best CV     0.957586 0.018979        14.916174       0.952638        0.95614     0.139654         0.005140
+CONFIG {'n_estimators': 80, 'min_samples_split': 4, 'min_samples_leaf': 2, 'max_depth': 5}
