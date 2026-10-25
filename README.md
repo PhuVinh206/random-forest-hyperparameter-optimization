@@ -30,7 +30,7 @@ The **20% stratified test holdout is never used in tuning**. We also measure eva
 
 Best searched parameters: `{'n_estimators': 80, 'min_samples_split': 4, 'min_samples_leaf': 2, 'max_depth': 5}`.
 
-**Decision:** Keep the default Random Forest for this benchmark and protocol: its CV score is higher, held-out test macro-F1 is tied, and optimization added 14.9 seconds of candidate evaluation. This does not imply Random Search cannot improve other datasets/budgets.
+**Decision:** Keep the default Random Forest for this benchmark and protocol: its CV score is higher, held-out test macro-F1 is tied, and optimization added 14.96 seconds of candidate evaluation. This does not imply Random Search cannot improve other datasets/budgets.
 
 ![Search history](figures/convergence.png)
 
@@ -40,15 +40,29 @@ Best searched parameters: `{'n_estimators': 80, 'min_samples_split': 4, 'min_sam
 
 ## How to Run
 
+### Local execution
+
 ```bash
 python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 python src/run_experiments.py
 ```
 
-Run from repository root. This regenerates all CSV, JSON and PNG outputs. On different computers exact runtime and some library-version-dependent scores may vary. Execution was checked with Python 3.13.5 and scikit-learn 1.8.0.
+Run these commands from the repository root using the appropriate Python environment.
+
+### Google Colab
+
+1. Open https://colab.research.google.com/.
+2. Upload the project notebook or upload the project ZIP and extract it in Colab.
+3. Install dependencies from `requirements.txt`.
+4. Run `src/run_experiments.py` from the project root.
+5. Inspect the generated CSV/JSON files in `results/` and PNG plots in `figures/`.
+
+The recorded experiment environment was Python 3.13.16 and scikit-learn 1.6.1 (see `results/experiment_config.json`). Runtime may vary across environments.
+
+Full experiment analysis: [results/analysis.md](results/analysis.md).
+
+Final report: [report/](report/).
 
 ## Repository Structure
 - `src/`: runnable scripts; `results/`: authentic generated CSV, JSON and logs
